@@ -1,0 +1,12 @@
+# Add files here to ignore them from prettier formatting
+
+.angular
+.idea
+.prettierrc
+
+assets
+node_modules
+
+*.svg
+*.txt
+

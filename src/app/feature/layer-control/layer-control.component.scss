@@ -1,0 +1,21 @@
+:host {
+    .item-list {
+        display: grid;
+        grid-gap: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .layer-headline {
+        align-items: end;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .headline {
+        font-size: medium;
+
+        span {
+            font-weight: 500;
+        }
+    }
+}
