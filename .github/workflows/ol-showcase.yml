@@ -24,13 +24,4 @@ jobs:
               run: npm run test
 
             - name: Build
-              run: npm run build
-
-            - name: Deploy
-              if: success()
-              uses: peaceiris/actions-gh-pages@v3
-              with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: dist/open-layers-showcase/browser
-                  enable_jekyll: true
-                  publish_branch: main
+              run: npm run build:ci
