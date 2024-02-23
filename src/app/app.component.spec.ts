@@ -1,12 +1,19 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-window.ResizeObserver = jest.fn().mockImplementation(() => ({
-    disconnect: jest.fn(),
-    observe: jest.fn(),
-    unobserve: jest.fn(),
-}));
+
+class MockResizeObserver {
+    constructor(callback: ResizeObserverCallback) {
+        // Constructor implementation if needed
+    }
+
+    observe = jasmine.createSpy('observe');
+    unobserve = jasmine.createSpy('unobserve');
+    disconnect = jasmine.createSpy('disconnect');
+}
 describe('AppComponent', () => {
     beforeEach(async () => {
+        window.ResizeObserver = MockResizeObserver as any;
+
         await TestBed.configureTestingModule({
             imports: [AppComponent],
         }).compileComponents();

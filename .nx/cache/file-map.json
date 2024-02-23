@@ -35,8 +35,6 @@
     "@typescript-eslint/parser": "6.19.0",
     "eslint": "^8.56.0",
     "jasmine-core": "~5.1.0",
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
@@ -58,11 +56,15 @@
       },
       {
         "file": ".eslintrc.json",
-        "hash": "14645878845883387518"
+        "hash": "204228705006230391"
+      },
+      {
+        "file": ".github/workflows/ol-showcase.yml",
+        "hash": "15546308781314980515"
       },
       {
         "file": ".gitignore",
-        "hash": "13044518069027839699"
+        "hash": "15322385604651401928"
       },
       {
         "file": ".prettierignore",
@@ -86,19 +88,47 @@
       },
       {
         "file": "README.md",
-        "hash": "11389083529998349955"
+        "hash": "1500973237979932350"
       },
       {
         "file": "angular.json",
-        "hash": "11714488740132400388"
+        "hash": "13833490998078151764"
+      },
+      {
+        "file": "docs/3rdpartylicenses.txt",
+        "hash": "6857836973253494747"
+      },
+      {
+        "file": "docs/favicon.ico",
+        "hash": "3988961587069885523"
+      },
+      {
+        "file": "docs/index.html",
+        "hash": "4688114237062016344"
+      },
+      {
+        "file": "docs/main.51d4b8735fd1fbbb.js",
+        "hash": "110610833128414862"
+      },
+      {
+        "file": "docs/polyfills.70d1611b507fcd9d.js",
+        "hash": "7486334476691760118"
+      },
+      {
+        "file": "docs/runtime.218a2bf19af2bb8c.js",
+        "hash": "2255815305011385281"
+      },
+      {
+        "file": "docs/styles.dcc4edf198340f2c.css",
+        "hash": "13091254614283157726"
       },
       {
         "file": "package-lock.json",
-        "hash": "6794322542482262535"
+        "hash": "18312886778894943004"
       },
       {
         "file": "package.json",
-        "hash": "13862106027743802888"
+        "hash": "2723841504845067212"
       },
       {
         "file": "src/app/app.component.html",
@@ -110,7 +140,7 @@
       },
       {
         "file": "src/app/app.component.spec.ts",
-        "hash": "1799480396947872953"
+        "hash": "7757220986874300586"
       },
       {
         "file": "src/app/app.component.ts",
@@ -126,7 +156,7 @@
       },
       {
         "file": "src/app/domain/services/geo.service.spec.ts",
-        "hash": "15902433949401000480"
+        "hash": "9606197068763635636"
       },
       {
         "file": "src/app/domain/services/geo.service.ts",
@@ -150,7 +180,7 @@
       },
       {
         "file": "src/app/feature/layer-control/layer-control.component.spec.ts",
-        "hash": "10131917228480102378"
+        "hash": "1475589799743436196"
       },
       {
         "file": "src/app/feature/layer-control/layer-control.component.ts",
@@ -161,20 +191,36 @@
         "hash": "3244421341483603138"
       },
       {
+        "file": "src/assets/i18n/en.json",
+        "hash": "15753941481085060538"
+      },
+      {
+        "file": "src/assets/i18n/es.json",
+        "hash": "15753941481085060538"
+      },
+      {
         "file": "src/favicon.ico",
         "hash": "3988961587069885523"
       },
       {
         "file": "src/index.html",
-        "hash": "5302486499291743637"
+        "hash": "2561697210353385727"
       },
       {
         "file": "src/main.ts",
-        "hash": "15773409609676624962"
+        "hash": "2416889639884547295"
       },
       {
         "file": "src/styles.scss",
         "hash": "13331971638509387855"
+      },
+      {
+        "file": "src/transloco-loader.ts",
+        "hash": "98451089284221969"
+      },
+      {
+        "file": "transloco.config.js",
+        "hash": "10541630764981573806"
       },
       {
         "file": "tsconfig.app.json",
@@ -186,7 +232,7 @@
       },
       {
         "file": "tsconfig.spec.json",
-        "hash": "10685812502644337696"
+        "hash": "10740337037618679418"
       }
     ]
   }

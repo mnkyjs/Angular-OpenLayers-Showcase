@@ -4,16 +4,23 @@ import { LayerControlComponent } from './layer-control.component';
 import { MatBottomSheetRef } from '@angular/material/bottom-sheet';
 import { EMPTY } from 'rxjs';
 
-window.ResizeObserver = jest.fn().mockImplementation(() => ({
-    disconnect: jest.fn(),
-    observe: jest.fn(),
-    unobserve: jest.fn(),
-}));
+class MockResizeObserver {
+    constructor(callback: ResizeObserverCallback) {
+        // Constructor implementation if needed
+    }
+
+    observe = jasmine.createSpy('observe');
+    unobserve = jasmine.createSpy('unobserve');
+    disconnect = jasmine.createSpy('disconnect');
+}
+
 describe('LayerControlComponent', () => {
     let component: LayerControlComponent;
     let fixture: ComponentFixture<LayerControlComponent>;
 
     beforeEach(async () => {
+        window.ResizeObserver = MockResizeObserver as any;
+
         await TestBed.configureTestingModule({
             imports: [LayerControlComponent],
             providers: [
