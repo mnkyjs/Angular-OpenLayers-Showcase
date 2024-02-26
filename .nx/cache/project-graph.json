@@ -5140,6 +5140,15 @@
         "hash": "sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w=="
       }
     },
+    "npm:colors": {
+      "type": "npm",
+      "name": "npm:colors",
+      "data": {
+        "version": "1.4.0",
+        "packageName": "colors",
+        "hash": "sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA=="
+      }
+    },
     "npm:combined-stream": {
       "type": "npm",
       "name": "npm:combined-stream",
@@ -7523,6 +7532,15 @@
         "version": "4.6.0",
         "packageName": "jasmine-core",
         "hash": "sha512-O236+gd0ZXS8YAjFx8xKaJ94/erqUliEkJTDedyE7iHvv4ZVqi+q+8acJxu05/WJDKm512EUNn809In37nWlAQ=="
+      }
+    },
+    "npm:jasmine-spec-reporter": {
+      "type": "npm",
+      "name": "npm:jasmine-spec-reporter",
+      "data": {
+        "version": "7.0.0",
+        "packageName": "jasmine-spec-reporter",
+        "hash": "sha512-OtC7JRasiTcjsaCBPtMO0Tl8glCejM4J4/dNuOJdA8lBjz4PmWjYQ6pzb0uzpBNAWJMDudYuj9OdXJWqM2QTJg=="
       }
     },
     "npm:jest": {
@@ -21818,6 +21836,13 @@
       {
         "source": "npm:jake",
         "target": "npm:minimatch",
+        "type": "static"
+      }
+    ],
+    "npm:jasmine-spec-reporter": [
+      {
+        "source": "npm:jasmine-spec-reporter",
+        "target": "npm:colors",
         "type": "static"
       }
     ],
