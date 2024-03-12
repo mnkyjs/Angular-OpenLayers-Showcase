@@ -18,4 +18,8 @@
             font-weight: 500;
         }
     }
+
+    .dropup:hover .dropup-content {
+        display: block;
+    }
 }
