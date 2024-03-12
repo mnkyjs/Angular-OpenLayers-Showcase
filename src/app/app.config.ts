@@ -1,6 +1,5 @@
-import { ApplicationConfig } from '@angular/core';
-import { provideAnimations } from '@angular/platform-browser/animations';
+import { ApplicationConfig, ɵprovideZonelessChangeDetection } from '@angular/core';
 
 export const appConfig: ApplicationConfig = {
-    providers: [provideAnimations()],
+    providers: [ɵprovideZonelessChangeDetection()],
 };
