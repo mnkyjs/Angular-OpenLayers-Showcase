@@ -12,12 +12,7 @@ import { LayerControlComponent } from '../layer-control/layer-control.component'
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MapComponent implements AfterViewInit {
-    isControlsOpened = this.controlStateService.sheetState;
-
-    constructor(
-        private controlStateService: ControlStateService,
-        private geoService: GeoService,
-    ) {}
+    constructor(private geoService: GeoService) {}
 
     ngAfterViewInit(): void {
         this.geoService.updateView();

@@ -12,7 +12,7 @@ import GeoJSON from 'ol/format/GeoJSON';
 import { fromLonLat } from 'ol/proj';
 import { defaults as defaultControls } from 'ol/control';
 import { defaults as defaultInteractions, PinchZoom } from 'ol/interaction';
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { Collection, Feature } from 'ol';
 import { Geometry } from 'ol/geom';
 
@@ -31,7 +31,7 @@ export class GeoService {
     ];
 
     selectedTileSource = this.tileSources[1];
-    vectorSources: Vector[] = [];
+    vectorSources = signal<Vector[]>([]);
 
     private readonly map: Map;
     private readonly tileLayer: TileLayer<OsmSource>;
@@ -60,7 +60,7 @@ export class GeoService {
             const vectorSource = new VectorSource({ features });
             const vector: Vector = { name: event.file.name, source: vectorSource };
 
-            this.vectorSources.push(vector);
+            this.vectorSources.set([vector]);
             this.setVectorSource(vector);
         });
 
